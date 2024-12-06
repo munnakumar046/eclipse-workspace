@@ -1,0 +1,38 @@
+package com.annum.www;
+
+//define the cat class
+public class Cat {
+	// private instance variable
+	private String name;
+	private int age;
+
+	// Default constructor
+	public Cat() {
+		this.name = "Unknow";
+		this.age = 0;
+	}
+
+//	// getter for name
+//	public String getName() {
+//		return name;
+//	}
+//
+//	// getter for age
+//	public int getAge() {
+//		return age;
+//	}
+
+	public static void main(String[] args) {
+		// create a new cat object using the default constructor
+		Cat myCat = new Cat();
+		// use the getter methods to access private variable
+//		System.out.println("cat's name:" + myCat.getName());
+//		System.out.println("cat's age:" + myCat.getAge());
+		System.out.println("cat's name:" + myCat.name);
+
+		System.out.println("cat's age:" + myCat.age);
+
+		
+	}
+
+}

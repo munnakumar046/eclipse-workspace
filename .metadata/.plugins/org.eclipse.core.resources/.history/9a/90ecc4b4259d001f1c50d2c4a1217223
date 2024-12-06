@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Linear Gradient Background</title>
+    <style>
+        /* Background styling with linear gradient */
+        body {
+            background: linear-gradient(#fc466b); /* Gradient from teal to light blue */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Form container styling */
+        .form-container {
+            background: linear-gradient("yellow", "red"); /* Subtle gradient for the form background */
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        /* Input field styling */
+        input[type="text"] {
+            width: 100%;
+            padding: 6px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        /* Button styling */
+        input[type="submit"],
+        input[type="reset"] {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50; /* Submit button color */
+        }
+
+        input[type="reset"] {
+            background-color: #f44336; /* Reset button color */
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="test" method="GET">
+            <table align="center">
+                <tr>
+                    <td>No:</td>
+                    <td><input type="text" name="t1" /></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="t2" /></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" name="t3" /></td>
+                </tr>
+                <tr>
+                    <td>Roll No:</td>
+                    <td><input type="text" name="t4" /></td>
+                </tr>
+                <tr>
+                    <td><input type="reset" value="Reset" /></td>
+                    <td><input type="submit" value="Submit" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

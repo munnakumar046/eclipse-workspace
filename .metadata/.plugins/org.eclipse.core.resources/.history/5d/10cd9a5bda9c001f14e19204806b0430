@@ -1,0 +1,22 @@
+package com.annum.www;
+
+public class Account {
+
+	private double accountNumber;
+	private double balance;
+	
+	public Account(double accountNumber, double balance) 
+	{
+		this.accountNumber=accountNumber;
+		this.balance=balance;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Account ac=new Account(50249025,55000);
+		System.out.println("Account numbar is : "+ac.accountNumber);
+		System.out.println("Amount   is : "+ac.balance);
+
+	}
+
+}
